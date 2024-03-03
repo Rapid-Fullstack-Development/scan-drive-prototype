@@ -33,23 +33,7 @@ async function getFileSystems() {
             });
         }
         else {
-            // For macOS and Linux
-            exec('df -h', (error, stdout) => {
-                if (error) {
-                    reject(error);
-                    return;
-                }
-                console.log(stdout); //todo:
-            });
-
-            exec('mount', (error, stdout, stderr) => { // Or use `df -h`
-                if (error) {
-                    console.error(`exec error: ${error}`);
-                    return;
-                }
-                console.log(stdout);
-                // Parse the stdout for mount points using network protocols
-            });
+            resolve("/");
         }
     });
 }
