@@ -1,7 +1,13 @@
-# drivelist-test
+# scan-drive-prototype
 
-Testing out how to get a list of drives and filesystems across platforms.
+A cross-platform prototype of scanning the filesystem for images.
 
 ```bash
-node index.js
+npm start
+```
+
+Or with live reload:
+
+```bash
+npm run start:dev
 ```

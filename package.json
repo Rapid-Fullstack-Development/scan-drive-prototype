@@ -1,12 +1,16 @@
 {
-  "name": "drivelist-test",
+  "name": "scan-drive-prototype",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "start:dev": "node-dev --respawn index.js"
   },
   "keywords": [],
   "author": "ashley@codecapers.com.au",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "node-dev": "^8.0.0"
+  }
 }
